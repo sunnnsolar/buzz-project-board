@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Add the Project board to Buzz</title>
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font:16px/1.5 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:#111113;color:#ededef}
+main{max-width:520px;padding:32px;border-radius:24px;background:#1b1b1f;border:1px solid #2e2e35}
+h1{margin:0 0 8px;font-size:1.6rem}p{color:#b4b4bb}
+a.btn{display:inline-block;margin:12px 0;padding:12px 22px;border-radius:999px;background:#d7f75b;color:#111;font-weight:700;text-decoration:none}
+code{background:#26262c;padding:2px 6px;border-radius:6px;color:#ededef}
+small{color:#8b8b93}
+</style></head><body><main>
+<h1>Add the Project board to Buzz</h1>
+<p>Opening Buzz… If your browser asks, choose <b>Open Buzz</b>. Buzz then shows the plugin to review: press <b>Install plugin</b>.</p>
+<a class="btn" id="go" href="buzz://plugin-install?repository=https%3A%2F%2Fgithub.com%2Fsunnnsolar%2Fbuzz-project-board.git&amp;ref=main">Open in Buzz</a>
+<p>After it's installed, open <b>Project board</b> in the Buzz sidebar and press <b>Connect</b> to link your own board key (about a minute).</p>
+<p><small>Didn't open? In Buzz go to Settings, Plugins, Manage plugins, Add, and paste <code>https://github.com/sunnnsolar/buzz-project-board</code>. Needs Buzz 1.0 on a Mac.</small></p>
+</main>
+<script>setTimeout(function(){location.href=document.getElementById("go").href},300)</script>
+</body></html>
