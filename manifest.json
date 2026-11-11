@@ -1,0 +1,22 @@
+{
+  "id": "sunnn.project-board",
+  "name": "Project board",
+  "apiVersion": 1,
+  "description": "The sales.sunnn.co Action Items project board inside Buzz: boards, lists, cards, checklists and comments. Read-only preview.",
+  "discovery": { "category": "productivity", "tags": ["sunnn", "kanban", "projects"] },
+  "host": {
+    "commands": [
+      {
+        "id": "board-read",
+        "program": "sunnn-board-read",
+        "args": [],
+        "maxInputBytes": 4096,
+        "maxOutputBytes": 1048576,
+        "artifact": {
+          "path": "~/.buzz/bin/sunnn-board-read",
+          "sha256": "4d2595e0cbde3c33cb616bc1c0cb0a0ee725a6058254ccc28af6aaaea8cb52dc"
+        }
+      }
+    ]
+  }
+}
